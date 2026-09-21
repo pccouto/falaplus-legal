@@ -108,7 +108,7 @@
 
   <h1 class="title">Privacy Policy</h1>
   <p class="lede">This page explains what data the Fala+ app collects, what it is for, and how you can contact us about it. We wrote it to be read by a parent, a carer or a therapist — not only by a lawyer.</p>
-  <p class="updated">Last updated: 19 September 2026 (v5) · Controller: Paulo César dos Santos Couto</p>
+  <p class="updated">Last updated: 21 September 2026 (v6) · Controller: Paulo César dos Santos Couto</p>
 
   <div class="badge-row">
     <span class="badge">🚫 No ads</span>
@@ -146,11 +146,20 @@
       <tr><th>If you do not create an account</th><th>If you create an account (Account and Backup)</th></tr>
       <tr>
         <td>Nothing is sent to our servers. All progress and customisation stays on the device only.</td>
-        <td>Through Google, Microsoft or email/password (Firebase Authentication), we store your email, name and profile photo (if the sign-in provider supplies them) to identify the account. For each child profile we also sync: <strong>name, date of birth, communication stage, level, completed steps, unlocks, stars and mascot items earned, rewards/medals and usage time</strong>.</td>
+        <td>Through Google, Microsoft or email/password (Firebase Authentication), we store your email, name and profile photo (if the sign-in provider supplies them) to identify the account. For each child profile we also sync: <strong>name, date of birth, communication stage, level, completed steps, unlocks, stars and mascot items earned, rewards/medals and usage time</strong>, plus the <strong>learning history</strong> and the <strong>adult's preferences</strong> described below.</td>
       </tr>
     </table>
     <div class="card">
-      <p><strong>Communicate board:</strong> if you have an account, the photos, voice recordings and custom cards/words you add specifically to the Communicate board (Communicate menu) are also synced with your account, so you have them if you change device. This is the only part of the app where photos and voices leave the device — see the next section for everything else, which always stays local.</p>
+      <p><strong>Communicate board:</strong> if you have an account, the photos, voice recordings and custom cards/words you add specifically to the Communicate board (Communicate menu) are also synced with your account, so you have them if you change device. They only exist if an adult creates them.</p>
+    </div>
+    <div class="card">
+      <p><strong>Voice recordings (Voice menu):</strong> if you have an account, the recordings an adult makes of their own voice saying words, and the setting that lets each one be used in games, are also stored in your account so you can get them back if you change device or sign out. They only exist if an adult records them.</p>
+    </div>
+    <div class="card">
+      <p><strong>Learning history:</strong> if you have an account, for each profile we store the words and activities the child worked on (day, game or activity, word, language, result and count), the words that were shown, best times and the stars ledger. It is used to restore the path and for the weekly report. <strong>It does not include the child's name</strong> and contains no photos or recordings.</p>
+    </div>
+    <div class="card">
+      <p><strong>Adult preferences:</strong> if you have an account, for each profile we store the app settings (for example voice speed and source, sensory mode, Communicate board options, favourites, hidden icons and tutorials already seen). The Adult Area PIN, the language and the volume are not sent.</p>
     </div>
   </section>
 
@@ -159,9 +168,10 @@
     <p>This data is never sent to our servers, even with an account:</p>
     <ul>
       <li>Photos used to personalise icons and games (outside the Communicate board)</li>
-      <li>Family voice recordings used in games and in the app's general feedback (outside the Communicate board)</li>
+      <li>The Adult Area PIN, the language and the volume</li>
+      <li>All data of anyone who does not create an account</li>
     </ul>
-    <p>If you uninstall the app, or use "Reset" in the Adult Area, this data is permanently erased from the device and no copy exists on any of our servers.</p>
+    <p>If you uninstall the app, or use "Reset" in the Adult Area, this data is permanently erased from the device and no copy exists on any of our servers. If you have an account, "Sign out" first saves everything that is synced to the account and only then erases the data from the device; when you sign in again you get back what was saved.</p>
   </section>
 
   <section id="children">
@@ -186,12 +196,12 @@
 
   <section id="purchases">
     <h2><span class="num">07</span> Purchases and subscriptions</h2>
-    <p>Fala+ offers an optional subscription (<strong>Fala+ Premium</strong>) that unlocks additional content. Purchases are processed entirely by <strong>Google Play Billing</strong> — we do not receive or store your card or payment method details; that stays between you and Google. The subscription is monthly, renews automatically, and can be cancelled at any time on Google Play. The app only stores, on the device, the information that the subscription is active.</p>
+    <p>Fala+ offers an optional subscription (<strong>Fala+ Premium</strong>) that unlocks additional content. Purchases are processed entirely by <strong>Google Play Billing</strong> — we do not receive or store your card or payment method details; that stays between you and Google. The subscription is monthly, renews automatically, and can be cancelled at any time on Google Play. So that Premium is tied to your account, we send Google Play an obfuscated identifier of the Fala+ account; Premium is only active with the Google account that made the purchase and stops being active on the device when you sign out (it returns when you sign in with that account). The app stores, on the device, the information that the subscription is active.</p>
   </section>
 
   <section id="security">
     <h2><span class="num">08</span> Security</h2>
-    <p>Synced account data is stored through Firebase infrastructure (Google Cloud), with that service's standard protections. Data stored only on the device (photos, voices, custom cards) depends on the security of the device itself — we recommend keeping your phone/tablet protected with a PIN or biometrics.</p>
+    <p>Synced account data is stored through Firebase infrastructure (Google Cloud), with that service's standard protections. Data stored only on the device (for example the PIN and personalisation photos outside the Communicate board) depends on the security of the device itself — we recommend keeping your phone/tablet protected with a PIN or biometrics.</p>
   </section>
 
   <section id="rights">
@@ -203,9 +213,9 @@
     <h2><span class="num">10</span> How to delete your data — Fala+</h2>
     <p>These steps apply to the <strong>Fala+</strong> app, by Paulo César dos Santos Couto.</p>
     <ol>
-      <li><strong>Delete a child profile</strong> (and everything that belongs to it, including photos, voices and custom cards stored on the device): open Fala+ → Adult Area → Profiles → tap the delete icon next to the profile → confirm. <em>Effect: immediate and permanent on the device. If you are signed in, the profile is also deleted from your account (profile data, progress and that profile's Communicate board). If you are offline, the request is kept and completed as soon as you are online, so please do not uninstall the app before then.</em></li>
-      <li><strong>Delete only a profile's progress</strong>, keeping the name and date of birth: Adult Area → Profiles → "Reset Profile" → confirm. <em>Effect: immediate and permanent — erases stars, medals, mascots, customisations and the progress synced to the cloud (if there is an account); the profile's name and date of birth are kept.</em></li>
-      <li><strong>Delete the account and all cloud data</strong> (email, progress and Communicate board customisation synced to Firebase): Adult Area → Account and Backup → sign out; then send a request to <a class="link" href="mailto:gpccouto@gmail.com">gpccouto@gmail.com</a> with the email of the account to delete. <em>Effect: we delete the email, the account identifier, the synced progress and the photos/voice recordings/cards of the Communicate board stored in Firebase, within 30 days of the request. Photos and voice recordings used outside the Communicate board (icon and game customisation) never left the device, so they never exist on our servers at any point.</em></li>
+      <li><strong>Delete a child profile</strong> (and everything that belongs to it, including photos, voices and custom cards stored on the device): open Fala+ → Adult Area → Profiles → tap the delete icon next to the profile → confirm. <em>Effect: immediate and permanent on the device. If you are signed in, the profile is also deleted from your account (profile data, progress, learning history, voice recordings and that profile's Communicate board). If you are offline, the request is kept and completed as soon as you are online, so please do not uninstall the app before then.</em></li>
+      <li><strong>Delete only a profile's progress</strong>, keeping the name and date of birth: Adult Area → Profiles → "Reset Profile" → confirm. <em>Effect: immediate and permanent — erases stars, medals, mascots, customisations, voice recordings, learning history and the progress synced to the cloud (if there is an account); the profile's name and date of birth are kept.</em></li>
+      <li><strong>Delete the account and all cloud data</strong> (email, progress, learning history, preferences, voice recordings and Communicate board customisation synced to Firebase): Adult Area → Account and Backup → sign out; then send a request to <a class="link" href="mailto:gpccouto@gmail.com">gpccouto@gmail.com</a> with the email of the account to delete. <em>Effect: we delete the email, the account identifier, the synced progress, the learning history, the preferences, the voice recordings and the photos/voices/cards of the Communicate board stored in Firebase, within 30 days of the request. Personalisation photos outside the Communicate board never left the device, so they never exist on our servers at any point.</em></li>
     </ol>
   </section>
 
